@@ -1,0 +1,38 @@
+@import "../../utils/styles.scss";
+
+.container {
+    height: 100vh;
+    font-size: 4rem;
+    position: relative;
+    background: url(../../utils/images/front.jfif);
+    background-size: 100%;
+    opacity: 3.4;
+    color: white;
+
+    .title {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .button {
+        color:white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 1.5rem;
+        border-radius: 1rem;
+        background-color: red;
+        font-size: 2rem;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        text-decoration: none;
+
+        &:visited{
+            text-decoration: none;
+        }
+    }
+}
