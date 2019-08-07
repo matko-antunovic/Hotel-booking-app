@@ -5,11 +5,16 @@
   "dependencies": {
     "node-sass": "^4.12.0",
     "react": "^16.8.6",
+    "react-devtools": "^3.6.3",
     "react-dom": "^16.8.6",
+    "react-redux": "^7.1.0",
     "react-router": "^5.0.1",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
-    "react-slideshow-image": "^1.2.1"
+    "react-slideshow-image": "^1.2.1",
+    "redux": "^4.0.4",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -1,17 +1,6 @@
 import React from 'react';
 import { Slide } from 'react-slideshow-image';
-import slide1  from "../../assets/images/room-1.jpeg";
-import slide2 from "../../assets/images/room-2.jpeg";
-import slide3 from "../../assets/images/room-3.jpeg";
-import slide4 from "../../assets/images/room-4.jpeg";
-import slide5 from "../../assets/images/room-5.jpeg";
 import "./Slider.scss";
-
-const slideImages = [
-  '../../assets/images/room-1.jpeg',
-  'images/slide_3.jpg',
-  'images/slide_4.jpg'
-];
 
 const properties = {
   duration: 5000,

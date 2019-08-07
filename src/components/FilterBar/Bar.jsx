@@ -1,29 +1,62 @@
-import React, { Component } from 'react'
-import "./Bar.scss"
-class Bar extends Component {
-    render() {
-        return (
-            <div className="bar">
+import React from "react";
+import "./Bar.scss";
 
-                <div className="bar-title">
-                    Search room
-                </div>
-            <div className="bar-filters">
-                
-                <div>
-                <span>Room Type</span>
-                <span>Guests</span>
-                <span>Guests</span>
-                <span>Room Price</span>
-                <span>Guests</span>
-                <span>Guests</span>
-                <span>Room Price</span>
-                <span>Room Size</span>
-                </div>
-            </div>
-            </div>
-        )
-    }
-}
 
-export default Bar;
+const Bar=({rooms,handleChange})=> {
+
+//  const {
+//     type,
+//     capacity,
+//     price,
+//     minPrice,
+//     maxPrice,
+//     minSize,
+//     maxSize,
+//     breakfast,
+//     pets
+//   } = rooms;
+
+
+
+  const getUnique = (items, value) => {
+    return [...new Set(items.map(item => item[value]))];
+  };
+
+
+  
+  const roomsFilter=rooms.map(room=>room.fields)
+  let types = getUnique(roomsFilter, "type");
+  // add all
+  types = ["all", ...types];
+  types = types.map((item, index) => (
+    <option key={index} value={item}>
+      {item}
+    </option>
+  ));
+
+    return (
+      <div className="bar">
+        <div className="bar-title">Search room</div>
+        <div className="bar-filters">
+          <form className="filter-form">
+            <div className="form-group">
+            <label htmlFor="typy">Room Type</label>
+            <select 
+            name="type"
+            id="type"
+            onChange={handleChange}
+            value="type"
+            className="form-control">
+                {types}
+            </select>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    );
+  }
+
+
+
+export default (Bar);

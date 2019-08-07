@@ -1,23 +1,19 @@
 import React, { Component } from 'react'
 import "./PrevieSelection.scss"
-import DATA from "../../assets/data";
 import Item from "../Item/Item"
 
 class PreviewSelection extends Component {
 
-    state={
-        listing:DATA
-    }
+    
 
     render() {
-        const {listing}=this.state;
-
+        //  console.log("U PREVIEWU" ,this.props.rooms)
+        let listing=this.props.rooms.map(room=>room.fields);
         return (
             <div className="selection">
-
                 {listing.map((item,i)=>{
-                   return <Item key={item.sys.id} item={item} index={i}/> 
-                })}
+                   return <Item key={i} item={item}/> 
+                })} 
                
             </div>
         )
