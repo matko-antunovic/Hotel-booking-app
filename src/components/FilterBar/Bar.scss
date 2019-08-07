@@ -1,4 +1,21 @@
 .bar{
-    background-color: yellowgreen;
-    height: 5vh;
+    height: 15vh;
+    font-size: 1.6rem;
+
+    &-title{
+        color: red;
+    }
+
+    .bar-filters{
+   
+    background-color: #333;
+    
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    &:not(:last-child){
+
+    }
+}
 }

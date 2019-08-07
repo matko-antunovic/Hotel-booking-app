@@ -4,7 +4,23 @@ class Bar extends Component {
     render() {
         return (
             <div className="bar">
-                FILTER BAR IDE OVDJE RODACI
+
+                <div className="bar-title">
+                    Search room
+                </div>
+            <div className="bar-filters">
+                
+                <div>
+                <span>Room Type</span>
+                <span>Guests</span>
+                <span>Guests</span>
+                <span>Room Price</span>
+                <span>Guests</span>
+                <span>Guests</span>
+                <span>Room Price</span>
+                <span>Room Size</span>
+                </div>
+            </div>
             </div>
         )
     }
