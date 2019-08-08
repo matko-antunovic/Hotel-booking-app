@@ -16,11 +16,9 @@ h3 {
 
 .each-slide > div {
   display: flex;
-  align-items: center;
-  justify-content: center;
   background-size: cover;
   background-position: center;
-  height: 40rem;
+  height: 50rem;
 }
 
 .each-slide span {
@@ -61,7 +59,15 @@ h3 {
 }
 
 .react-slideshow-container + div.indicators {
-  display: none;
+ position: absolute;
+ color: #fff;
+ top:50vh;  
+ left:50%;
+ transform: translate(-50%,-50%);
+}
+
+.react-slideshow-container + div.indicators > div.active{
+  background-color: #fff;
 }
 
 .react-slideshow-container .nav {

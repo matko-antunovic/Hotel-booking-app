@@ -1,4 +1,3 @@
-
 import React, { Component } from 'react'
 import {connect} from "react-redux"
 import {getRooms,getMaxPrice,getMaxSize,setPrice,handleFilterChange,filterRooms} from "../../redux/Filter/filterActions";
@@ -13,6 +12,7 @@ class Preview extends Component {
         this.props.getMaxPrice();
         this.props.getMaxSize();
         this.props.setPrice();
+        this.props.filterRooms();
       }
 
     handleChange=event=>{
@@ -25,11 +25,22 @@ class Preview extends Component {
     }
 
     render() {
+      
         return (
             <div>
                 <PreviewGallery/>
-                <Bar rooms={this.props.data} handleChange={this.handleChange}/>
-                <PreviewSelection rooms={this.props.filter.sortedRooms}/>
+                <Bar 
+                rooms={this.props.data} 
+                handleChange={this.handleChange}
+                type={this.props.filter.type}
+                capacity={this.props.filter.capacity}
+                price={this.props.filter.price}
+                minPrice={this.props.filter.minPrice}
+                maxPrice={this.props.filter.maxPrice}
+                breakfast={this.props.filter.breakfast}
+                pets={this.props.filter.pets}
+                 />
+                <PreviewSelection rooms={this.props.filter.sortedRooms} />
             </div>
         )
     }
@@ -46,7 +57,8 @@ const mapDispatchToProps=dispatch=>({
     getMaxSize:()=>{dispatch(getMaxSize())},
     setPrice:()=>{dispatch(setPrice())},
     handleFilterChange:(name,value)=>{dispatch(handleFilterChange(name,value))},
-    filterRooms:()=>{dispatch(filterRooms())}
+    filterRooms:()=>{dispatch(filterRooms())},
+    // slider:()=>{dispatch()}
 })
 
 export default connect(mapStateToProps,mapDispatchToProps)(Preview);
@@ -56,90 +68,3 @@ export default connect(mapStateToProps,mapDispatchToProps)(Preview);
 
 
 
-
-
-
-// import React, { Component } from 'react'
-// import Bar from "../../components/FilterBar/Bar";
-// import PreviewSelection from "../../components/PreviewSelection/PreviewSelection";
-// import PreviewGallery from "../../components/PreviewGallery/PreviewGallery";
-// import "./Preview.scss"
-// import {connect} from "react-redux"
-
-// class Preview extends Component {
-
-
-//     state = {
-//         rooms: [],
-//         sortedRooms: [],
-//         loading: true,
-//         type: "all",
-//         capacity: 1,
-//         price: 0,
-//         minPrice: 0,
-//         maxPrice: 0,
-//         minSize: 0,
-//         maxSize: 0,
-//         breakfast: false,
-//         pets: false
-//       };
-
-//       componentDidMount() {
-//         let rooms=this.props.data;
-
-//         let maxPrice = Math.max(...rooms.map(item => item.fields.price));
-//         let maxSize = Math.max(...rooms.map(item => item.fields.size));
-//         this.setState({
-//           rooms,
-//           sortedRooms: rooms,
-//           loading: false,
-//           price: maxPrice,
-//           maxPrice,
-//           maxSize
-//         });
-//       }
-
-//     handleChange=event=>{
-//         const target=event.target;
-//         const value=target.type === "checkbox" ? target.checked : target.value;
-//         const name=target.name;
-
-//         this.setState({
-//             [name]:value
-//         },
-//         this.filterRooms
-//         )
-//     }
-
-//     filterRooms =()=> {
-//         let {
-//           rooms,
-//           type,
-//         } = this.state;
-
-        
-//         let tempRooms = [...rooms];
-//         if (type !== "all") {
-//             tempRooms = tempRooms.filter(room => room.fields.type === this.state.type);
-//           }
-//           this.setState({
-//             sortedRooms: tempRooms
-//           });
-//     };
-
-//     render() {
-//         return (
-//             <div className="preview-collection">
-//                 <PreviewGallery/>
-//                <Bar rooms={this.state.rooms} handleChange={this.handleChange}/>
-//                <PreviewSelection rooms={this.state.sortedRooms}/>
-//             </div>
-//         )
-//     }
-// }
-  
-// const mapStateToProps=state=>({
-//     data:state.data.rooms
-//   })
-
-// export default connect(mapStateToProps)(Preview);

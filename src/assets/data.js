@@ -23,7 +23,7 @@ export default [
     fields: {
       name: "single economy",
       slug: "single-economy",
-      type: "single",
+      type: "Single",
       price: 100,
       size: 200,
       capacity: 1,
@@ -80,7 +80,7 @@ export default [
     fields: {
       name: "single basic",
       slug: "single-basic",
-      type: "single",
+      type: "Single",
       price: 150,
       size: 250,
       capacity: 1,
@@ -137,7 +137,7 @@ export default [
     fields: {
       name: "single standard",
       slug: "single-standard",
-      type: "single",
+      type: "Single",
       price: 250,
       size: 300,
       capacity: 1,
@@ -194,7 +194,7 @@ export default [
     fields: {
       name: "single deluxe",
       slug: "single-deluxe",
-      type: "single",
+      type: "Single",
       price: 300,
       size: 400,
       capacity: 1,
@@ -251,7 +251,7 @@ export default [
     fields: {
       name: "double economy",
       slug: "double-economy",
-      type: "double",
+      type: "Double",
       price: 200,
       size: 300,
       capacity: 2,
@@ -308,7 +308,7 @@ export default [
     fields: {
       name: "double basic",
       slug: "double-basic",
-      type: "double",
+      type: "Double",
       price: 250,
       size: 350,
       capacity: 2,
@@ -365,7 +365,7 @@ export default [
     fields: {
       name: "double standard",
       slug: "double-standard",
-      type: "double",
+      type: "Double",
       price: 300,
       size: 400,
       capacity: 2,
@@ -422,7 +422,7 @@ export default [
     fields: {
       name: "double deluxe",
       slug: "double-deluxe",
-      type: "double",
+      type: "Double",
       price: 400,
       size: 500,
       capacity: 2,
@@ -479,7 +479,7 @@ export default [
     fields: {
       name: "family economy",
       slug: "family-economy",
-      type: "family",
+      type: "Family",
       price: 300,
       size: 500,
       capacity: 3,
@@ -536,7 +536,7 @@ export default [
     fields: {
       name: "family basic",
       slug: "family-basic",
-      type: "family",
+      type: "Family",
       price: 350,
       size: 550,
       capacity: 4,
@@ -593,7 +593,7 @@ export default [
     fields: {
       name: "family standard",
       slug: "family-standard",
-      type: "family",
+      type: "Family",
       price: 400,
       size: 600,
       capacity: 5,
@@ -650,7 +650,7 @@ export default [
     fields: {
       name: "family deluxe",
       slug: "family-deluxe",
-      type: "family",
+      type: "Family",
       price: 500,
       size: 700,
       capacity: 6,
@@ -707,7 +707,7 @@ export default [
     fields: {
       name: "presidential",
       slug: "presidential-room",
-      type: "presidential",
+      type: "Presidential",
       price: 600,
       size: 1000,
       capacity: 10,

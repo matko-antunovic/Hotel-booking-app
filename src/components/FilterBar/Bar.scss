@@ -1,21 +1,52 @@
-.bar{
+.bar {
     height: 15vh;
-    font-size: 1.6rem;
-
-    &-title{
-        color: red;
-    }
-
-    .bar-filters{
-   
+    font-size: 1.8rem;
     background-color: #333;
-    
-    color: white;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    &:not(:last-child){
 
+    &-title {
+        color: #fff;
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 500;
+        padding: 1rem;
+        &:after{
+            content: "";
+            display: block;
+            margin:0 auto;
+            margin-top: 1rem;
+            width: 20%;
+            border-bottom: 2px solid rgba(199, 11, 11, 1);
+        }
     }
-}
+
+    .bar-filters {
+        background-color: #333;
+        color: white;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        letter-spacing: 0.2px;
+    }
+
+    .filter-form {
+        width: 90%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        .form-group {
+            display: flex;
+            align-items: center;
+            
+            span{
+                margin-left: 1rem;
+                width: 5rem;
+            }
+        }
+
+        .label-form {
+            margin-right: 1rem;
+        }  
+    }
 }
