@@ -1,13 +1,13 @@
 import React from 'react';
-import HomePage from "./pages/HomePage/HomePage";
 import Preview from "./pages/Preview/Preview";
+import Room from "./pages/Room/Room";
 import {Route} from "react-router-dom"
 
 function App() {
   return (
     <div>
-     <Route exact path="/" component={HomePage}/>
-     <Route exact path="/preview" component={Preview}/>
+     <Route exact path="/" component={Preview}/>
+     <Route exact path="/room/:id" component={Room}/>
     </div>
   );
 }

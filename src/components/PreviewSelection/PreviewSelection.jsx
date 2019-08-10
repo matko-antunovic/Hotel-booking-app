@@ -1,22 +1,17 @@
-import React, { Component } from 'react'
+import React from 'react'
 import "./PrevieSelection.scss"
 import Item from "../Item/Item"
 
-class PreviewSelection extends Component {
 
-    
+const PreviewSelection=({rooms})=> {
 
-    render() {
-        //  console.log("U PREVIEWU" ,this.props.rooms)
-        let listing=this.props.rooms.map(room=>room.fields);
         return (
             <div className="selection">
-                {listing.map((item,i)=>{
-                   return <Item key={i} item={item}/> 
+                {rooms.map((item,i)=>{
+                   return <Item key={i} item={item.fields} id={item.sys.id}/> 
                 })} 
                
             </div>
         )
     }
-}
 export default PreviewSelection;

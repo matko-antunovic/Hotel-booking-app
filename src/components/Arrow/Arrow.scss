@@ -1,0 +1,14 @@
+.slide-arrow {
+    color:black;
+	cursor: pointer;
+    font-size: 3rem;
+  
+    &.right {
+        right: 1rem;
+        margin-left: 1rem;
+    }
+    &.left {
+        left: 1rem;
+        margin-right: 1rem;
+    }
+}
