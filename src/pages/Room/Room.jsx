@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { getRoom } from "../../redux/Data/dataActions";
 import Carousel from "../../components/Carousel/Carousel"
+
 import "./Room.scss";
 
 class Room extends Component {

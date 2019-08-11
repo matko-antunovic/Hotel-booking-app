@@ -1,0 +1,18 @@
+.thumbnail-container{
+    display: flex;
+    margin-top: 2rem;
+    img{
+        width: 20rem;
+        height: 10rem;
+        object-fit: cover;
+        margin: .2rem;
+        cursor: pointer;
+    }
+
+    .active{
+        border:1px solid rgba(199, 11, 11, 1);
+        overflow: hidden;
+        outline: hidden;
+        transition:.1s cubic-bezier(.78,-0.04,1,1);
+    }
+}
