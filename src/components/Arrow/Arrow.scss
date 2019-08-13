@@ -1,5 +1,5 @@
 .slide-arrow {
-    color:rgba(199, 11, 11, 1);
+    color:rgba(#BCECE0, 1);
 	cursor: pointer;
     font-size: 7rem;
     font-weight: 100;
@@ -7,6 +7,7 @@
     &.right {
         right: 1rem;
         margin-left: 1.5rem;
+        
     }
     &.left {
         left: 1rem;

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { getRoom } from "../../redux/Data/dataActions";
 import Carousel from "../../components/Carousel/Carousel"
+import Details from "../../components/Details/Details"
 
 import "./Room.scss";
 
@@ -13,16 +14,20 @@ class Room extends Component {
   render() {
     const roomData = this.props.room.map(item => item.fields);
     const roomDetails = roomData[0];
+    
 
     return (
-      <div>
+      <div className="room-container">
         {
         roomDetails ? 
-        <div className="room">
-          <Carousel
+        <div className="room"> 
+           <Carousel
             images={roomDetails.images.map(img => img.fields.file.url)}
-          />
-        </div> :null
+          /> 
+         
+          <Details details={roomDetails}/>
+        </div> 
+        :null
         }
       </div>
     );

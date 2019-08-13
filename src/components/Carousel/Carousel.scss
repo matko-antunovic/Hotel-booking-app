@@ -1,4 +1,25 @@
-.carousel{
-    display: flex;
-    align-items: center;
+@import "../../utils//styles.scss";
+
+.carousel-container{
+
+  grid-column:1/7; 
+
+    .carousel{
+    
+    }
 }
+
+// .carousel-container{
+
+//   display: flex;
+//   flex-direction: column;
+//   margin: 15rem 5rem 20rem 5rem;
+ 
+
+//     .carousel{
+//         display: flex;
+//         align-items: center;
+//     }
+// }
+
+
