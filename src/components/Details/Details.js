@@ -16,11 +16,15 @@ const Details = ({ details }) => {
       </div>
       <div className="details-extras">
         <div className="details-price">
-          <h2>Details</h2>
-         <p>Price:{details.price}</p>
+          <h1>Details</h1>
+         <p>Room Type : {details.type}</p>
+         <p>Price : {details.price}$</p>
+         <p>Size : {details.size}sq</p>
+         <p>Capacity : {details.capacity}</p>
+         
         </div>
-        <div>
-          <h2>Extras</h2>
+        <div className="details-extra">
+          <h1>Extras</h1>
           {extras}
         </div>
       </div>

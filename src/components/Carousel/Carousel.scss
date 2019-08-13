@@ -2,24 +2,13 @@
 
 .carousel-container{
 
-  grid-column:1/7; 
+  grid-column:1/8; 
+  align-self: center;
+  margin:0 2rem;
 
     .carousel{
-    
+    display: flex;
+    align-items: center;
     }
 }
-
-// .carousel-container{
-
-//   display: flex;
-//   flex-direction: column;
-//   margin: 15rem 5rem 20rem 5rem;
- 
-
-//     .carousel{
-//         display: flex;
-//         align-items: center;
-//     }
-// }
-
 

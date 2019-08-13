@@ -7,7 +7,7 @@ const Thumbnail = ({ images, index, handleClick }) => {
       {images.map((img, i) => (
         <div
           onClick={() => handleClick(i)}
-          className={`${index === i ? "active" : null}`}
+          className={`${index === i ? "active" : null} imagediv`}
           key={i}
         >
           <img src={img} alt="alt" />
