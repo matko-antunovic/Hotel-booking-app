@@ -2,10 +2,10 @@
 
 .details-container{
     grid-column: 8/-1;
-    background-color: #BCECE0;
-    font-size: 1.7rem;
-    
-    word-spacing: .1rem;
+    background-color:#00234C;
+    font-size: 1.8rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    word-spacing: .2rem;
 
     display: grid;
     grid-template-columns: repeat(6,1fr);
@@ -14,17 +14,17 @@
     .details-description{
      grid-column: 2/6;
      align-self: center;
-     background-color: #BCECE0;
-     color: #4C5270;
+     background-color: #00234C;
+     color: #fff;
    
     }
     .details-extras{
     grid-column: 2/6;
-    line-height: 2.5rem;
-    
+    line-height: 2.6rem;
+    font-family: 'Source Sans Pro', sans-serif;
     display: flex;
     justify-content: space-between;
-    color: #4C5270;
+    color: #fff;
 
     ul:not(:last-child) {
      

@@ -71,7 +71,7 @@ const Bar = ({ rooms, handleChange,type,capacity,guests,price,minPrice,maxPrice,
 
         <div className="form-group">
           <label className="label-form" htmlFor="price">Price:  </label>
-          <input type="range" id="price" name="price" min={minPrice} max={maxPrice}className="form-control" value={price} onChange={handleChange} />
+          <input type="range" id="price" name="price" min={minPrice} max={maxPrice} className="form-control" value={price} onChange={handleChange} />
           <span>{price}$ </span>
         </div>
 

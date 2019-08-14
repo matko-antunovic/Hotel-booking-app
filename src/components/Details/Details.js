@@ -17,7 +17,7 @@ const Details = ({ details }) => {
       <div className="details-extras">
         <div className="details-price">
           <h1>Details</h1>
-         <p>Room Type : {details.type}</p>
+         <p>Type : {details.type}</p>
          <p>Price : {details.price}$</p>
          <p>Size : {details.size}sq</p>
          <p>Capacity : {details.capacity}</p>

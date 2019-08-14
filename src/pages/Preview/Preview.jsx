@@ -4,6 +4,7 @@ import {getRooms,getMaxPrice,getMaxSize,setPrice,handleFilterChange,filterRooms}
 import Bar from "../../components/FilterBar/Bar"
 import PreviewSelection from "../../components/PreviewSelection/PreviewSelection"
 import PreviewGallery from "../../components/PreviewGallery/PreviewGallery"
+import "./Preview.scss";
 
 class Preview extends Component {
 
@@ -27,7 +28,8 @@ class Preview extends Component {
     render() {
       
         return (
-            <div>
+            <div className="preview">
+                <div className="preview-container">
                 <PreviewGallery/>
                 <Bar 
                 rooms={this.props.data} 
@@ -41,6 +43,7 @@ class Preview extends Component {
                 pets={this.props.filter.pets}
                  />
                 <PreviewSelection rooms={this.props.filter.sortedRooms} />
+                </div>
             </div>
         )
     }

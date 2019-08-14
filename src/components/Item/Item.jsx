@@ -5,6 +5,7 @@ import {withRouter} from "react-router-dom";
 
 const Item = ({ item,history,match ,id}) => {
   const { name, price } = item;
+  console.log(match.url)
 
   return (
     <div
@@ -12,7 +13,7 @@ const Item = ({ item,history,match ,id}) => {
         backgroundImage: `url(${item.images[0].fields.file.url})`
       }}
       className="item-container"
-      onClick={()=>history.push(`${match.url}room/${id}` )}
+      onClick={()=>history.push(`${match.url}/room/${id}` )}
     >
       <div className="item-price">{price}$</div>
       <div className="item-name">{name}</div>

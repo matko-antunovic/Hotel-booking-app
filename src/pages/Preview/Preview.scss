@@ -1,0 +1,9 @@
+.preview{
+    background-color: rgb(238, 248, 251);
+    padding: 6rem 7rem;
+
+    &-container{
+        box-shadow: 3px 2px 12px -6px rgba(0,0,0,0.75);
+        background-color: #fff;
+    }
+}

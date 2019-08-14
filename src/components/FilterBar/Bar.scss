@@ -1,32 +1,35 @@
 .bar {
     height: 15vh;
-    font-size: 1.8rem;
-    background-color: #333;
-
+    font-size: 2.2rem;
+    background-color: #00234C;
+   
+    
     &-title {
         color: #fff;
         text-align: center;
-        font-size: 3rem;
+        font-size: 3.5rem;
         font-weight: 500;
+        font-family: 'Source Sans Pro', sans-serif;
         padding: 1rem;
         &:after{
             content: "";
             display: block;
             margin:0 auto;
             margin-top: 1rem;
-            width: 20%;
-            border-bottom: 2px solid rgba(199, 11, 11, 1);
+            width: 10%;
+            border-bottom: 1px solid rgba(#fff, 1);
         }
     }
 
     .bar-filters {
-        background-color: #333;
-        color: white;
+        background-color:#00234C;
+        color: #fff;
         height: 50%;
         display: flex;
         justify-content: center;
         align-content: center;
         letter-spacing: 0.2px;
+        
     }
 
     .filter-form {
@@ -42,6 +45,10 @@
             span{
                 margin-left: 1rem;
                 width: 5rem;
+            }
+
+            .form-control{
+               margin-top: .6rem;
             }
         }
 
