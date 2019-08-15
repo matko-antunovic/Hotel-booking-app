@@ -6,7 +6,7 @@ import "./PreviewGallery.scss"
     render() {
         return (
             <div className="gallery-container" >
-                <img src="http://www.desktopimages.org/pictures/2014/0816/1/orig_63908.jpg" alt="beach"/>
+                <img src="https://images.unsplash.com/photo-1520285774798-2f1616131a68?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="nez"/>
             </div>
         )
     }

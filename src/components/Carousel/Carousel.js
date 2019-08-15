@@ -39,6 +39,8 @@ class Carousel extends Component {
 
 
   render() {
+    const{images}=this.props;
+    const {currentImageIndex}=this.state;
     return (
       <div className="carousel-container">
       <div className="carousel">
@@ -47,15 +49,15 @@ class Carousel extends Component {
           handleClick={this.previousSlide}
           glyph="&#60;"
         />
-        <ImageSlide src={this.props.images[this.state.currentImageIndex]} />
+        <ImageSlide src={images[currentImageIndex]} />
         <Arrow
           direction="right"
           handleClick={this.nextSlide}
           glyph="&#62;"
-          index={this.state.currentImageIndex}
+          index={currentImageIndex}
         />
         </div>
-        <Thumbnail handleClick={this.handleClick} images={this.props.images} index={this.state.currentImageIndex}/>
+        <Thumbnail handleClick={this.handleClick} images={images} index={currentImageIndex}/>
         </div>
     );
   }

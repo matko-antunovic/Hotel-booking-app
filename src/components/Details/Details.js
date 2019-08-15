@@ -2,7 +2,7 @@ import React from "react";
 import "./Details.scss";
 
 const Details = ({ details }) => {
-  console.log(details);
+
   const extras = details.extras.map((ext, i) => (
     <ul key={i} className="ul">
       {ext}

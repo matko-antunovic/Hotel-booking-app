@@ -5,7 +5,7 @@ import {withRouter} from "react-router-dom";
 
 const Item = ({ item,history,match ,id}) => {
   const { name, price } = item;
-  console.log(match.url)
+
 
   return (
     <div

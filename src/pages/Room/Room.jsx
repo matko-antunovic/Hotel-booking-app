@@ -7,12 +7,14 @@ import Details from "../../components/Details/Details"
 import "./Room.scss";
 
 class Room extends Component {
+  
   componentDidMount() {
     this.props.getRoom(this.props.match.params.id);
   }
 
   render() {
-    const roomData = this.props.room.map(item => item.fields);
+    const {room}=this.props;
+    const roomData = room.map(item => item.fields);
     const roomDetails = roomData[0];
     
 
@@ -34,7 +36,7 @@ class Room extends Component {
   }
 }
 const mapStateToProps = state => ({
-  room: state.data.room
+  room: state.data.data
 });
 const mapDispatchToProps = dispatch => ({
   getRoom: id => {
