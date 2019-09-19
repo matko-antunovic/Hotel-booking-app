@@ -40,7 +40,7 @@
        
         .left-side{
             width: 50%;
-            background-color: rgb(212, 245, 245);
+            background-color: #f5f5f5;
             display: grid;
             grid-template-columns: repeat(6,1fr);
             grid-template-rows: repeat(6,1fr);
@@ -63,7 +63,7 @@
                 font-size: 3.5rem;
                 font-weight: 500;
                 padding: 3.3rem;
-                background-color: #00234C;
+                background-color: #1c1c1c;
                 color: white;
                 cursor: pointer;
 

@@ -1,0 +1,72 @@
+.NavBar{
+    position: fixed;
+    z-index: 111;
+    height: 6rem;
+    width:100%;
+    background-color: #1c1c1c;
+    color:#fff;
+    font-size: 1.3rem;
+
+    &-container{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        justify-content: space-between;
+    }
+
+    &-submenus{
+        width: 80%;
+        display: flex;
+        justify-content: space-evenly;
+
+
+        .active{
+            position: relative;
+          }
+          
+
+        .active:after {
+            position: absolute;
+            content: '';
+            border-bottom: 1px solid #c19b76;
+            width: 80%;
+            transform: translateX(-50%);
+            bottom: -1rem;
+            left: 50%;
+          }
+
+        &__menu{
+            margin:0 2%;
+            background-color: inherit;
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+
+
+    &-logo{
+        height:6rem;
+        width: 6rem;
+        background-color: #c19b76;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        span{
+       font-size: 2.2rem;
+        }
+    }
+
+    &-book{
+        height: 100%;
+        background-color: #c19b76;
+        padding: 0 3rem;
+        text-align: center;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        span{
+        }
+    }
+}
