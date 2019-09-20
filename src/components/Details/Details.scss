@@ -2,7 +2,7 @@
 
 .details-container{
     grid-column: 8/-1;
-    background-color:#1c1c1c;
+    background-color:#fff;
     font-size: 1.8rem;
     font-family: 'Source Sans Pro', sans-serif;
     word-spacing: .2rem;
@@ -14,8 +14,8 @@
     .details-description{
      grid-column: 2/6;
      align-self: center;
-     background-color: #1c1c1c;
-     color: #fff;
+     background-color: #fff;
+     color: #1c1c1c;
    
     }
     .details-extras{
@@ -24,7 +24,7 @@
     font-family: 'Source Sans Pro', sans-serif;
     display: flex;
     justify-content: space-between;
-    color: #fff;
+    color: #1c1c1c;
 
     ul:not(:last-child) {
      
@@ -32,7 +32,7 @@
     }
 
     h1{
-        color:#fff;
+        color:#1c1c1c;
         text-shadow: var(--shadow-dark);
         margin-bottom: 2rem;
         

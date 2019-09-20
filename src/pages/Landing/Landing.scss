@@ -1,0 +1,97 @@
+.Landing{
+    height: auto;
+    width: 100%;
+    position: relative;
+ 
+
+    &__title{
+        color: #fff;
+        position: absolute;
+        top:35%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-family: "Didot 24 A","Didot 24 B";
+        font-size: 10rem;
+        font-weight: 100;
+        text-transform: uppercase;
+       text-align: center;
+
+
+    }
+
+    img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        filter: brightness(.8);
+     
+    }
+ 
+    
+    p{
+        color: #fff;
+        font-size: 1.6rem;
+        position: absolute;
+        top:55%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-family: "freight-sans-pro-n4","freight-sans-pro",Arial,serif,sans-serif;
+    }
+
+    span{
+        color: #fff;
+        font-size: 1.6rem;
+        position: absolute;
+        top:10%;
+        transform: translate(-50%,-50%);
+        left: 50%;
+
+        &::after{
+            position: absolute;
+            top:3rem;
+            left: 4rem;
+            content: "";
+            display: inline-block;
+            background-color: #fff;
+            width: 5rem;
+            height: .1rem;
+        }
+    }
+
+    h2{
+        position: absolute;
+        bottom:30%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        color: #fff;
+        border: 1px solid #fff;
+        padding:1.5rem 3rem;
+
+        &:hover{
+            background-color: #c19b76;
+            cursor: pointer;
+            border:1px solid  #c19b76;
+        }
+    }
+
+    .galleryc{
+        height: auto;
+        width: 100%;
+    }
+
+    .slick-dots{
+   
+        position: absolute;
+        bottom:2%;
+
+        li{
+            button{
+               
+                &::before{
+                    
+                    color:white;
+                }
+            }
+        }
+    }
+}

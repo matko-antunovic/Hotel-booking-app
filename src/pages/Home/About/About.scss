@@ -1,0 +1,60 @@
+.About {
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    padding-bottom: 10rem;
+    z-index: 200;
+
+    &-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            color: #1c1c1c;
+            width: 40%;
+            font-size: 3.5rem;
+            margin: 15rem auto 10rem auto;
+            text-align: center;
+            font-weight: 100;
+            font-family: "Didot 24 A", "Didot 24 B";
+            line-height: 1.5;
+        }
+
+        &__bottom {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            font-size: 1.5rem;
+            line-height: 2.5;
+           
+
+            &--left {
+                width: 25%;
+                margin: 2rem;
+            }
+
+            &--right {
+                width: 25%;
+                margin: 2rem;
+            }
+        }
+
+        .box {
+            display: inline-block;
+            color: #c19b76;
+            border: 1px solid #c19b76;
+            margin:8rem 0 2rem 0;
+            padding: 1.5rem 3rem;
+            font-size: 1.5rem;
+            font-family: "freight-sans-pro-n7", "freight-sans-pro", Arial, serif, sans-serif;
+
+            &:hover {
+                color: #fff;
+                background-color: #c19b76;
+                cursor: pointer;
+                
+            }
+        }
+    }
+}

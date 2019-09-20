@@ -4,9 +4,10 @@
     justify-content: center;
     padding:2rem 2rem 0 2rem;
     overflow: hidden;
-
+ 
     .imagediv{
         margin: .3rem;
+
     }
 
     img{
@@ -16,9 +17,12 @@
         cursor: pointer;
         box-shadow: 2px 2px 5px -4px rgba(0,0,0,0.75);
         border-radius: .1rem;
+
     }
 
     .active{
         filter: brightness(.35);
+        transition: all .5s ease-in-out;
+
     }
 }

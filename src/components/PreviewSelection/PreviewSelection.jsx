@@ -7,9 +7,9 @@ const PreviewSelection=({rooms,sortedRooms})=> {
 
         return (
             <div className="selection">
-                { sortedRooms ? sortedRooms.map((item,i)=>{
+                { sortedRooms.length>0 ? sortedRooms.map((item,i)=>{
                    return <Item key={i} item={item.fields} id={item.sys.id}/> 
-                }) : "nista"} 
+                }) : (<p>No rooms found with specified criteria...</p>)} 
                
             </div>
         )
