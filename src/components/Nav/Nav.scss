@@ -3,7 +3,7 @@
     z-index: 111;
     height: 6rem;
     width:100%;
-    background-color: #1c1c1c;
+    background-color: #151515;
     color:#fff;
     font-size: 1.3rem;
 
@@ -46,12 +46,14 @@
 
     &-logo{
         height:6rem;
-        width: 6rem;
+        width: 7rem;
         background-color: #c19b76;
         text-align: center;
         display: flex;
         justify-content: center;
         align-items: center;
+        text-decoration: none;
+        color: #fff;
 
         span{
        font-size: 2.2rem;

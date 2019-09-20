@@ -6,7 +6,7 @@ import "./PreviewGallery.scss"
     render() {
         return (
             <div className="gallery-container" >
-                <img src="https://images.unsplash.com/photo-1520285774798-2f1616131a68?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="nez"/>
+                <img src="https://static.adriaticluxuryhotels.com/uploaded-images/temp/5912BD6D-6683-B160-1116-6CA5E96FECDA_1170x900_inside_q85.jpg" alt="nez"/>
             </div>
         )
     }

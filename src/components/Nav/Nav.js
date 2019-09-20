@@ -7,7 +7,7 @@ const Nav = () => {
         <div className="NavBar">
             <div className="NavBar-container">
 
-        <div className="NavBar-logo"><span>B L</span></div>
+        <NavLink exact={true} to={"/"} className="NavBar-logo"><span>B L</span></NavLink>
 
                 <div className="NavBar-submenus">
                     <NavLink exact={true} to={"/"}  activeClassName="active" className="NavBar-submenus__menu">About Hotel</NavLink>

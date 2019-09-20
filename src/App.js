@@ -4,6 +4,7 @@ import Room from "./pages/Room/Room";
 import {Route} from "react-router-dom"
 import Home from "./pages/Home/Home";
 import Nav from "./components/Nav/Nav"
+import Footer from "./components/Footer/Footer"
 import "./App.scss"
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
      <Route exact path="/rooms" component={Preview}/>
      <Route exact path="/rooms/room/:id" component={Room}/>
     </div>
-
+   <Footer/>
     </div>
   );
 }
