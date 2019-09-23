@@ -28,13 +28,14 @@ function App() {
       <div id="site-container">
         <div  className="App"  id="content-container">
         <Nav/>
+        
         <div className="margin-wrapper">
           <PoseGroup>
-            <RouteContainer key={location.key}>
+            <RouteContainer key={location.pathname}>
               <Switch location={location}>
                 <Route exact path="/" component={Home} key="home" />
                 <Route exact path="/rooms" component={Preview} key="Rooms"/>
-                <Route exact path="/rooms/room/:id" component={Room}/>
+                <Route exact path="/rooms/room/:id" component={Room} key="Room" />
               </Switch>
             </RouteContainer>
           </PoseGroup>

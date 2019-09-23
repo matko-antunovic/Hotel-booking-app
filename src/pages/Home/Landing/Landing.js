@@ -1,10 +1,10 @@
 import React from 'react'
 import "./Landing.scss"
-import Landing1 from "../../utils/land1.png"
-import Landing2 from "../../utils/land2.png"
-import Landing3 from "../../utils/land3.png"
+import Landing1 from "../../../utils/land1.png"
+import Landing2 from "../../../utils/land2.png"
+import Landing3 from "../../../utils/land3.png"
 
-import Gallery from "../Home/Segment/Gallery"
+import Gallery from "../Segment/Gallery"
 
 const Landing = () => {
     return (

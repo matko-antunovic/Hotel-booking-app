@@ -1,6 +1,6 @@
 import React from 'react';
 import "./Home.scss";
-import Landing from "../Landing/Landing"
+import Landing from "./Landing/Landing"
 import BookSegment from "./Segment/BookSegment"
 import About from "./About/About"
 
@@ -10,7 +10,6 @@ const Home=( {match,history})=>{
             <Landing/>
             <About/>
             <BookSegment match={match} history={history} />
-        
             </div>
         )
     }

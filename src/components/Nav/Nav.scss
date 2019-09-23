@@ -68,7 +68,27 @@
         text-transform: uppercase;
         display: flex;
         align-items: center;
-        span{
+        text-decoration: none;
+        color:#fff;
+    }
+
+    button{
+        border: none;
+        background-color: #151515;
+        color: #fff;
+    }
+
+    
+}
+@media screen and (max-width:1350px){
+    .NavBar{
+        &-book{
+            min-width: 200px;
         }
+    }
+}
+@media screen and (max-width:850px){
+    .NavBar{
+        display: none;
     }
 }

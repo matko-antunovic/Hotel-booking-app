@@ -11,7 +11,6 @@ const BookSegment = ({match,history}) => {
         </p>
         </div>
         <div className="right-side">
-            <img src="https://images.unsplash.com/photo-1469796466635-455ede028aca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="sea" />
             <span className="book" onClick={()=>history.push(`${match.url}rooms`)}>Book Room Now</span>
             </div>
         </div>

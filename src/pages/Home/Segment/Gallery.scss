@@ -3,3 +3,9 @@
   max-height: 90vh;
 
 }
+
+@media screen and (max-width:1400px) {
+  .imgSlide{
+    height: 100vh;
+  }
+}

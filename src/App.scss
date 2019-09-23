@@ -5,5 +5,10 @@
 
 .margin-wrapper{ 
     padding-top: 6rem;
- 
+}
+
+@media screen and (max-width:850px){
+    .margin-wrapper{ 
+        padding-top: 0;
+    }
 }
