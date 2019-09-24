@@ -4,6 +4,7 @@ import Room from "./pages/Room/Room";
 import {Route,Switch} from "react-router-dom"
 import Home from "./pages/Home/Home";
 import Nav from "./components/Nav/Nav"
+import NavMobile from "./components/Nav/NavMobile/NavMobile"
 import Footer from "./components/Footer/Footer"
 import posed, { PoseGroup } from "react-pose";
 import ScrollToTop from "./ScrollToTop"
@@ -28,7 +29,7 @@ function App() {
       <div id="site-container">
         <div  className="App"  id="content-container">
         <Nav/>
-        
+        <NavMobile/>
         <div className="margin-wrapper">
           <PoseGroup>
             <RouteContainer key={location.pathname}>

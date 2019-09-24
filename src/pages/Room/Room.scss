@@ -7,3 +7,13 @@
      
         }
 }
+
+@media screen and (max-width:1250px) {
+    .room-container{
+        .room{
+            height: auto;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

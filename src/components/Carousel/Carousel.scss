@@ -13,4 +13,54 @@
  
     }
 }
+@media screen and (max-width:1250px) {
+  .carousel-container{
+    padding-top: 6rem;
+  }}
+@media screen and (max-width:750px) {
+  .carousel-container{
+  .carousel{
+    height: 500px;
+    .img-slide{
+      height: 100%;
+    img{
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      background-position: center;
+    }
+    }
+    .slide-arrow{
+      display: none;
+    }
+  }
 
+  .thumbnail-container{
+    height: 12rem;
+  }
+}
+}
+
+@media screen and (max-width:600px) {
+  .carousel-container{
+  .carousel{
+    height: 50vh;
+    .img-slide{
+      height: 100%;
+    img{
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      
+    }
+    }
+    .slide-arrow{
+      display: none;
+    }
+  }
+
+  .thumbnail-container{
+    padding:2rem 0 0 0;
+  }
+}
+}

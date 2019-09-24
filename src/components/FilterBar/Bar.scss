@@ -2,8 +2,8 @@
     height: 15vh;
     font-size: 2.2rem;
     background-color: #1c1c1c;
-   
-    
+
+
     &-title {
         color: #fff;
         text-align: center;
@@ -11,10 +11,11 @@
         font-weight: 500;
         font-family: 'Source Sans Pro', sans-serif;
         padding: 1rem;
-        &:after{
+
+        &:after {
             content: "";
             display: block;
-            margin:0 auto;
+            margin: 0 auto;
             margin-top: 1rem;
             width: 10%;
             border-bottom: 1px solid rgba(#fff, 1);
@@ -22,14 +23,14 @@
     }
 
     .bar-filters {
-        background-color:#1c1c1c;
+        background-color: #1c1c1c;
         color: #fff;
         height: 50%;
         display: flex;
         justify-content: center;
         align-content: center;
         letter-spacing: 0.2px;
-        
+
     }
 
     .filter-form {
@@ -41,19 +42,41 @@
         .form-group {
             display: flex;
             align-items: center;
-            
-            span{
+
+            span {
                 margin-left: 1rem;
                 width: 5rem;
             }
 
-            .form-control{
-               margin-top: .6rem;
-            }
+
         }
 
         .label-form {
             margin-right: 1rem;
-        }  
+        }
     }
 }
+
+@media screen and (max-width:1050px) {
+    .bar {
+        height: auto;
+
+        &-title{
+            padding: 5rem 0;
+        }
+
+        &-filters {
+         
+            padding:1rem 0 5rem 0;
+
+            .filter-form {
+                flex-direction: column;
+
+
+                div{
+                    margin: 1rem;
+                }
+        }
+    }
+}}
+

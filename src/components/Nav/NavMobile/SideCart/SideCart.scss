@@ -1,0 +1,27 @@
+.SideCart{
+    width:20rem;
+    height: 100%;
+    background-color: bisque;
+    position: fixed;
+    color: #00234C;
+    top: 6rem;
+    left:0;
+    z-index: 1111;
+ 
+    &__list-container{
+        list-style: none;
+        width: 100%;
+        font-size: 2rem;
+        font-weight: 600;
+        margin-left: 1.5rem;
+        padding-top: 2rem;
+
+        li{
+            cursor: pointer;
+            margin-top: 2.5rem;
+        }
+    }
+}
+.none{
+    display: none;
+}

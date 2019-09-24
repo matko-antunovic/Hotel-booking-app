@@ -11,3 +11,9 @@
         
     }
 }
+
+@media screen and (max-width:650px) {
+    .selection {
+    padding:7rem 2rem;
+    grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+}}

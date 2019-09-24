@@ -63,3 +63,16 @@
         }
     }
 }
+
+@media screen and (max-width:650px) {
+    .item-container {
+   background-size: cover;
+   background-position: center;
+
+   .item-name {
+       opacity: 1;
+   }
+   .item-price {
+    opacity: 1;
+}
+}}
